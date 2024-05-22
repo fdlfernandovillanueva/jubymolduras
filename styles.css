@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    text-align: end;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+main {
+    padding: 1px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.recuadrofot{
+    width: fit-content;
+    padding: 2px;
+    border-radius: 5%;
+    margin: auto;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+}
+
+#contenedorfotos {
+    margin: auto;
+    margin-top: 1em;
+    width: 85vw;
+    border-radius: 8%;
+    padding: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .logo {
+    width: 18vw;
+    height: 18vw;
+  }
+  h1 {
+    text-align: center;
+    font: oblique bold 300% cursive;
+}
+h2 {
+    text-align: center;
+}

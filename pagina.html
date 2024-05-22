@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Online - Juby Molduras</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Enlace a tu archivo CSS para estilos -->
+</head>
+<body>
+    <header>
+        <div>
+            <img src="logo.png" alt="logo">       
+        </div>
+    </header>
+
+    <main>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <!-- Aquí van tus productos -->
+        <section id="productos">
+            <h1>PRODUCTOS</h1>
+            <div >
+                <h2>BALUSTRES PARA BALCÓN</h2>
+                <p>Estos productos se calcula el precio por metro lineal e incluye colocación</p>
+                <button id="whatsappButton">Enviar WhatsApp a 3874892729</button>
+                <div class="producto" class="recuadrofot" id="contenedorfotos">
+                    <div>
+                        <img src="B1.jpg" class="logo">
+                    </div>
+                    <div>
+                        <img src="B2.jpg" alt="Producto 1" class="logo">
+                    </div>
+                    <div>
+                        <img src="B3.jpg" alt="Producto 1" class="logo">
+                    </div>
+                </div>
+            </div>
+            <div >
+                <div class="producto" class="recuadrofot" id="contenedorfotos">
+                    <div>
+                        <img src="B4.jpg" alt="Producto 1" class="logo">
+                    </div>
+                    <div>
+                        <img src="B5.jpg" alt="Producto 1" class="logo">
+                    </div>
+                    <div>
+                        <img src="B6.jpg" alt="Producto 1" class="logo">
+                    </div>
+                </div>
+            </div>
+            <!-- Repite esta estructura para cada producto -->
+            <h2>SOBRE MESA</h2>
+            <p>Contactarse al 3874892729 para consultar el precio</p>
+            <div class="producto" class="recuadrofot" id="contenedorfotos">
+                <div>
+                    <img src="S1.jpg" class="logo">
+                </div>
+                <div>
+                    <img src="S2.jpg" alt="Producto 1" class="logo">
+                </div>
+                <div>
+                    <img src="S3.jpg" alt="Producto 1" class="logo">
+                </div>
+            </div>
+
+            <h2>MOLDURAS</h2>
+            <p>Para exterior de concreto y de yeso para interior</p>
+            <div class="producto" class="recuadrofot" id="contenedorfotos">
+                <div>
+                    <img src="M1.jpg" class="logo">
+                </div>
+                <div>
+                    <img src="M2.jpg" alt="Producto 1" class="logo">
+                </div>
+                <div>
+                    <img src="M3.jpg" alt="Producto 1" class="logo">
+                </div>
+            </div>
+            <div class="producto" class="recuadrofot" id="contenedorfotos">
+                <div>
+                    <img src="M4.jpg" class="logo">
+                </div>
+                <div>
+                    <img src="M5.jpg" alt="Producto 1" class="logo">
+                </div>
+                <div>
+                    <img src="M6.jpg" alt="Producto 1" class="logo">
+                </div>
+            </div>
+
+        </section>
+        
+    </main>
+
+    <footer>
+        <div id="Contacto">
+        <p>&copy; 2024 Tienda Online de Juby Molduras</p>
+        <button id="whatsappButton">Enviar WhatsApp a 3874892729</button>
+        <script>
+            document.getElementById('whatsappButton').addEventListener('click', function() {
+                window.location.href = "https://wa.me/3874892729?text=Hola%20me%20interesa%20contactarme%20contigo";
+            });
+        </script>
+        </div>
+    </footer>
+</body>
+</html>
