@@ -31,27 +31,35 @@
                 <p>Estos productos se calcula el precio por metro lineal e incluye colocación</p>
                 <button id="whatsappButton">Enviar WhatsApp a 3874892729</button>
                 <div class="producto" class="recuadrofot" id="contenedorfotos">
-                    <div>
-                        <img src="B1.jpg" class="logo">
+                    <div class="image-container">                        
+                        <img src="B1.jpg" class="zoom-image" onclick="openModal(this.src)">
                     </div>
-                    <div>
-                        <img src="B2.jpg" alt="Producto 1" class="logo">
+                    <div class="image-container">
+                        <img src="B2.jpg" alt="Producto 1" class="zoom-image" onclick="openModal(this.src)">
                     </div>
-                    <div>
-                        <img src="B3.jpg" alt="Producto 1" class="logo">
+                    <div class="image-container">
+                        <img src="B3.jpg" alt="Producto 1" class="zoom-image" onclick="openModal(this.src)">
+                    </div>
+                    <div id="myModal" class="modal">
+                        <span class="close" onclick="closeModal()">&times;</span>
+                        <img class="modal-content" id="img01">
                     </div>
                 </div>
             </div>
             <div >
                 <div class="producto" class="recuadrofot" id="contenedorfotos">
                     <div>
-                        <img src="B4.jpg" alt="Producto 1" class="logo">
+                        <img src="B4.jpg" alt="Producto 1" class="zoom-image" onclick="openModal(this.src)">
                     </div>
                     <div>
-                        <img src="B5.jpg" alt="Producto 1" class="logo">
+                        <img src="B5.jpg" alt="Producto 1" class="zoom-image" onclick="openModal(this.src)">
                     </div>
                     <div>
-                        <img src="B6.jpg" alt="Producto 1" class="logo">
+                        <img src="B6.jpg" alt="Producto 1" class="zoom-image" onclick="openModal(this.src)">
+                    </div>
+                    <div id="myModal" class="modal">
+                        <span class="close" onclick="closeModal()">&times;</span>
+                        <img class="modal-content" id="img01">
                     </div>
                 </div>
             </div>
@@ -60,13 +68,17 @@
             <p>Contactarse al 3874892729 para consultar el precio</p>
             <div class="producto" class="recuadrofot" id="contenedorfotos">
                 <div>
-                    <img src="S1.jpg" class="logo">
+                    <img src="S1.jpg" class="zoom-image" onclick="openModal(this.src)">
                 </div>
                 <div>
-                    <img src="S2.jpg" alt="Producto 1" class="logo">
+                    <img src="S2.jpg" alt="Producto 1" class="zoom-image" onclick="openModal(this.src)">
                 </div>
                 <div>
-                    <img src="S3.jpg" alt="Producto 1" class="logo">
+                    <img src="S3.jpg" alt="Producto 1" class="zoom-image" onclick="openModal(this.src)">
+                </div>
+                <div id="myModal" class="modal">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <img class="modal-content" id="img01">
                 </div>
             </div>
 
@@ -74,24 +86,32 @@
             <p>Para exterior de concreto y de yeso para interior</p>
             <div class="producto" class="recuadrofot" id="contenedorfotos">
                 <div>
-                    <img src="M1.jpg" class="logo">
+                    <img src="M1.jpg" class="zoom-image" onclick="openModal(this.src)">
                 </div>
                 <div>
-                    <img src="M2.jpg" alt="Producto 1" class="logo">
+                    <img src="M2.jpg" alt="Producto 1" class="zoom-image" onclick="openModal(this.src)">
                 </div>
                 <div>
-                    <img src="M3.jpg" alt="Producto 1" class="logo">
+                    <img src="M3.jpg" alt="Producto 1" class="zoom-image" onclick="openModal(this.src)">
+                </div>
+                <div id="myModal" class="modal">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <img class="modal-content" id="img01">
                 </div>
             </div>
             <div class="producto" class="recuadrofot" id="contenedorfotos">
                 <div>
-                    <img src="M4.jpg" class="logo">
+                    <img src="M4.jpg" class="zoom-image" onclick="openModal(this.src)">
                 </div>
                 <div>
-                    <img src="M5.jpg" alt="Producto 1" class="logo">
+                    <img src="M5.jpg" alt="Producto 1" class="zoom-image" onclick="openModal(this.src)">
                 </div>
                 <div>
-                    <img src="M6.jpg" alt="Producto 1" class="logo">
+                    <img src="M6.jpg" alt="Producto 1" class="zoom-image" onclick="openModal(this.src)">
+                </div>
+                <div id="myModal" class="modal">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <img class="modal-content" id="img01">
                 </div>
             </div>
 
@@ -103,12 +123,10 @@
         <div id="Contacto">
         <p>&copy; 2024 Tienda Online de Juby Molduras</p>
         <button id="whatsappButton">Enviar WhatsApp a 3874892729</button>
-        <script>
-            document.getElementById('whatsappButton').addEventListener('click', function() {
-                window.location.href = "https://wa.me/3874892729?text=Hola%20me%20interesa%20contactarme%20contigo";
-            });
-        </script>
         </div>
     </footer>
+
+    <script src="script.js"></script>
+
 </body>
 </html>
