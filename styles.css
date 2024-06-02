@@ -68,3 +68,57 @@ footer {
 h2, h3, p {
     text-align: center;
 }
+
+/* Estilos para el contenedor de la imagen */
+.image-container {
+    display: inline-block;
+}
+
+/* Estilos para la imagen */
+.zoom-image {
+    width: 18vw;
+    height: 18vw;
+    cursor: pointer;
+}
+
+
+/* Estilos para el modal */
+.modal {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    z-index: 1; /* Se sitúa delante de otros elementos */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0); /* Color de fondo */
+    background-color: rgba(0,0,0,0.9); /* Fondo con opacidad */
+}
+
+/* Estilos para la imagen del modal */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Estilos para el botón de cerrar */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
